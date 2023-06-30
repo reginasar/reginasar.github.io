@@ -54,8 +54,13 @@ h1#red {
   color: #955A4B;
 }
 
-h1#brown {
-  color: #95814B;
+h2#red {
+  color: #955A4B;
+}
+
+h3#red {
+  color: #FFF5F2;
+  font-size: 5px;
 }
 
 h2#blue {
