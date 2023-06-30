@@ -25,19 +25,21 @@ body {
 
 /* Create three equal columns that floats next to each other */
 .column {  
-  float: left;
-  padding: 10px;
+  display: table;
+  width: 100%;
 }
 
 .half {
+	display: table-cell;
   background-color: #DFB2A6;
-  width: 50%;
+  padding: 10px;
 }
 
 
 .mono {
   background-color: #6B828D;
   width: 100%;
+	padding: 10px;
 }
 
 /* Clear floats after the columns */
@@ -55,12 +57,12 @@ body {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 100px) {
-  .column.half{
+@media only screen and (max-width: 100px) {
+  .half {
+    display: block;
     width: 100%;
   }
 }
-
 
 </style>
 </head>
