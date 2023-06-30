@@ -28,8 +28,13 @@ body {
   width: 33.33%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
+  transition: transform .2s;
 }
 
+
+.column:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 /* Clear floats after the columns */
 .row:after {
