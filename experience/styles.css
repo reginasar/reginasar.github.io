@@ -42,11 +42,16 @@ body {
   background-color: #D0D7DA;
   padding: 10px;
   text-align: center;
+  height: 80px;
 }
 
 
 h1#blue {
   color: #32505E;
+}
+
+h2#blue {
+  color: #4B6876;
 }
   
 h1#darkred {
@@ -108,10 +113,6 @@ h3#pink {
 }
 
 
-
-h2#blue {
-  color: #4B6876;
-}
 
 
 
