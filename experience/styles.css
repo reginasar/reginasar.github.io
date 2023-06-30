@@ -19,6 +19,8 @@ body {
 .column {
   float: left;
   padding: 10px;
+  height: 900px;
+  text-align: center;
 }
 
 
@@ -37,11 +39,11 @@ body {
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 2400px) {
-  .column {
-    width: 100%;
-  }
-}
+/*@media (max-width: 2400px) { */
+/*  .column {*/
+/*    width: 100%;*/
+/*  }*/
+/*}*/
 
 
 h1#blue {
