@@ -63,6 +63,10 @@ h3#darkred {
   font-size: 15px; /* Dark red paragraph font */
 }
 
+h1#lightred {
+  color: #FFF5F2; /* Light red big font */
+}
+
 h2#lightred {
   color: #FFF5F2;
   font-size: 20px; /* Light red subtitle font */
@@ -70,8 +74,25 @@ h2#lightred {
 
 h3#lightred {
   color: #FFF5F2;
-  font-size: 14px; /* Light red subtitle font */
+  font-size: 15px; /* Light red paragraph font */
 }
+
+h1#pink {
+  color: #FFE2DB;
+  font-size: 20px; /* pink big font */
+}
+
+h2#pink {
+  color: #FFE2DB;
+  font-size: 20px; /* pink subtitle font */
+}
+
+h3#pink {
+  color: #FFE2DB;
+  font-size: 15px; /* pink paragraph font */
+}
+
+
 
 h2#blue {
   color: #4B6876;
