@@ -19,10 +19,17 @@ body {
 .column {
   float: left;
   padding: 10px;
-  height: 900px;
+  height: 700px;
   text-align: center;
 }
 
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -60,7 +67,7 @@ h2#red {
 
 h3#red {
   color: #FFF5F2;
-  font-size: 5px;
+  font-size: 20px;
 }
 
 h2#blue {
