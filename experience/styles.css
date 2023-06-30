@@ -49,17 +49,28 @@ h1#blue {
   color: #32505E;
 }
   
-h1#red {
-  color: #955A4B;
+h1#darkred {
+  color: #955A4B; /* Dark red big font */
 }
 
-h2#red {
+h3#darkred {
   color: #955A4B;
+  font-size: 20px; /* Dark red paragraph font */
 }
 
-h3#red {
+h3#darkred {
+  color: #955A4B;
+  font-size: 15px; /* Dark red paragraph font */
+}
+
+h2#lightred {
   color: #FFF5F2;
-  font-size: 20px;
+  font-size: 20px; /* Light red subtitle font */
+}
+
+h3#lightred {
+  color: #FFF5F2;
+  font-size: 14px; /* Light red subtitle font */
 }
 
 h2#blue {
