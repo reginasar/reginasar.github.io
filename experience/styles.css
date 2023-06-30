@@ -1,49 +1,4 @@
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Didot, sans-serif, Arial, Helvetica;
-}
-
-/* Style the header */
-.header {
-  background-color: #DFB2A6;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 500px;
-}
-
-.left {
-  width: 25%;
-}
-
-.right {
-  width: 75%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-.footer {
-  background-color: #D0D7DA;
-  padding: 10px;
-  text-align: center;
-  height: 80px;
-}
 
 
 h1#blue {
