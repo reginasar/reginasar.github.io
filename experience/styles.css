@@ -63,6 +63,21 @@ h3#darkred {
   font-size: 15px; /* Dark red paragraph font */
 }
 
+BA8173
+h1#dred {
+  color: #BA8173; /* not so Dark red big font */
+}
+
+h3#dred {
+  color: #BA8173;
+  font-size: 20px; /* not so Dark red paragraph font */
+}
+
+h3#dred {
+  color: #BA8173;
+  font-size: 15px; /* not so Dark red paragraph font */
+}
+
 h1#lightred {
   color: #FFF5F2; /* Light red big font */
 }
