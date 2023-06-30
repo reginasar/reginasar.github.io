@@ -58,7 +58,7 @@ h1#darkred {
   color: #955A4B; /* Dark red big font */
 }
 
-h3#darkred {
+h2#darkred {
   color: #955A4B;
   font-size: 20px; /* Dark red paragraph font */
 }
@@ -73,7 +73,7 @@ h1#dred {
   color: #BA8173; /* not so Dark red big font */
 }
 
-h3#dred {
+h2#dred {
   color: #BA8173;
   font-size: 20px; /* not so Dark red paragraph font */
 }
