@@ -28,7 +28,21 @@ body {
   width: 33.33%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
+
+  li {
+    display: inline-block;
+    width: 1.2em;
+
+    &.grow {
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
 }
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -66,6 +80,9 @@ h1#brown {
 h2#blue {
   color: #4B6876;
 }
+
+
+
   
 </style>
 </head>
@@ -77,15 +94,15 @@ h2#blue {
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:#DFB2A6;">
+  <div class="column grow" style="background-color:#DFB2A6;">
     <h1 id="red">Experience</h1>
   
   </div>
-  <div class="column" style="background-color:#95A5AC;">
+  <div class="column grow" style="background-color:#95A5AC;">
     <h1 id="blue">Interests</h1>
   
   </div>
-  <div class="column" style="background-color:#DFD0A6;">
+  <div class="column grow" style="background-color:#DFD0A6;">
     <h1 id="brown">Pomelo</h1>
   
   </div>
