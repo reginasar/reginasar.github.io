@@ -11,7 +11,7 @@ h2#blue {
   
 h1#darkred {
   color: #955A4B; /* Dark red big font */
-  font-size: 2.5em; 
+  font-size: 25px; 
 }
 
 h2#darkred {
@@ -27,7 +27,7 @@ h3#darkred {
 BA8173
 h1#dred {
   color: #BA8173; /* not so Dark red big font */
-  font-size: 2.5em; 
+  font-size: 25px; 
 }
 
 h2#dred {
@@ -42,7 +42,7 @@ h3#dred {
 
 h1#lightred {
   color: #FFF5F2; /* Light red big font */
-  font-size: 2.5em; 
+  font-size: 25px; 
 }
 
 h2#lightred {
@@ -57,7 +57,7 @@ h3#lightred {
 
 h1#pink {
   color: #FFE2DB;
-  font-size: 20px; /* pink big font */
+  font-size: 25px; /* pink big font */
 }
 
 h2#pink {
