@@ -31,6 +31,11 @@ body {
   width: 100%;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
 
 .mini {
   float: left;
@@ -55,9 +60,7 @@ body {
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: flex;
   clear: both;
-  align-items: stretch;
 }
  
 /* Style the footer */
