@@ -43,6 +43,12 @@ body {
   transform: scale(1.5);
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+	
 .mono {
   background-color: #6B828D;
   width: 100%;
@@ -52,7 +58,6 @@ body {
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
   clear: both;
 }
 
