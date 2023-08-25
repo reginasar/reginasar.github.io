@@ -61,5 +61,28 @@ h3#lightblue {
   font-size: 15px;
 }
 
+a#blue:link {
+  color: #32505E;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a#blue:visited {
+  color: #32505E;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a#blue:hover {
+  color: #4B6876;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a#blue:active {
+  color: #4B6876;
+  background-color: transparent;
+  text-decoration: underline;
+}
   
 </style>
