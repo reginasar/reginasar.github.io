@@ -112,6 +112,26 @@ a#blue:active {
   text-decoration: underline;
 }
 
+a#darkred:link {
+  color: #955A4B;
+  background-color: transparent;
+  text-decoration: none;
+}
+a#darkred:visited {
+  color: #955A4B;
+  background-color: transparent;
+  text-decoration: none;
+}
+a#darkred:hover {
+  color: #DFB2A6;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a#darkred:active {
+  color: #DFB2A6;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
   
 </style>
