@@ -70,8 +70,47 @@ h3#pink {
   font-size: 15px; /* pink paragraph font */
 }
 
+a#lightred:link {
+  color: #FFF5F2;
+  background-color: transparent;
+  text-decoration: none;
+}
+a#lightred:visited {
+  color: #FFF5F2;
+  background-color: transparent;
+  text-decoration: none;
+}
+a#lightred:hover {
+  color: #955A4B;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a#lightred:active {
+  color: #955A4B;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
-
+a#blue:link {
+  color: #32505E;
+  background-color: transparent;
+  text-decoration: none;
+}
+a#blue:visited {
+  color: #32505E;
+  background-color: transparent;
+  text-decoration: none;
+}
+a#blue:hover {
+  color: #4B6876;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a#blue:active {
+  color: #4B6876;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 
   
