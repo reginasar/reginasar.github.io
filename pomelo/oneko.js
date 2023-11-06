@@ -1,7 +1,7 @@
 (function oneko() {
     const nekoEl = document.createElement("div");
-    let nekoPosX = 32;
-    let nekoPosY = 32;
+    let nekoPosX = 64;
+    let nekoPosY = 64;
     let mousePosX = 0;
     let mousePosY = 0;
     let frameCount = 0;
@@ -57,13 +57,13 @@
     };
     function create() {
         nekoEl.id = "oneko";
-        nekoEl.style.width = "32px";
-        nekoEl.style.height = "32px";
+        nekoEl.style.width = "64px";
+        nekoEl.style.height = "64px";
         nekoEl.style.position = "fixed";
         nekoEl.style.backgroundImage = "url('./oneko.gif')";
         nekoEl.style.imageRendering = "pixelated";
-        nekoEl.style.left = "16px";
-        nekoEl.style.top = "16px";
+        nekoEl.style.left = "32px";
+        nekoEl.style.top = "32px";
 
         document.body.appendChild(nekoEl);
 
@@ -77,8 +77,8 @@
 
     function setSprite(name, frame) {
         const sprite = spriteSets[name][frame % spriteSets[name].length];
-        nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${
-            sprite[1] * 32
+        nekoEl.style.backgroundPosition = `${sprite[0] * 64}px ${
+            sprite[1] * 64
         }px`;
     }
 
@@ -156,8 +156,8 @@
         nekoPosX -= (diffX / distance) * nekoSpeed;
         nekoPosY -= (diffY / distance) * nekoSpeed;
 
-        nekoEl.style.left = `${nekoPosX - 16}px`;
-        nekoEl.style.top = `${nekoPosY - 16}px`;
+        nekoEl.style.left = `${nekoPosX - 32}px`;
+        nekoEl.style.top = `${nekoPosY - 32}px`;
     }
 
     create();
