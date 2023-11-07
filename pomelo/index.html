@@ -26,16 +26,17 @@
 
 .leftcolumn {
   float: left;
-  max-width: 25%;
-  height: 100%; /* Should be removed. Only for demonstration */
+  max-width: auto 25%;
+  height: auto 100%; /* Should be removed. Only for demonstration */
   text-align: auto;
+  object-position: left;
 }
 
 }
 .centrecolumn {
   float: left;
   width: 100%;
-  height: 100%; /* Should be removed. Only for demonstration */
+  height: auto 100%; /* Should be removed. Only for demonstration */
 }
 
 @media (max-width: 1780px) {
@@ -45,19 +46,17 @@
 
 .rightcolumn {
   float: right;
-  max-width: 64%;
-  height: 100%; /* Should be removed. Only for demonstration */
+  max-width: auto 64%;
+  height: auto 100%; /* Should be removed. Only for demonstration */
   object-fit: cover;
   object-position: right;
 }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="leftcolumn">
-      <img src="https://reginasar.github.io/pomelo/media/roof_left.png">
-      <a id="blue" href="https://reginasar.github.io/">Home</a>
-    </div>
+  <div class="leftcolumn">
+    <img src="https://reginasar.github.io/pomelo/media/roof_left.png">
+    <a id="blue" href="https://reginasar.github.io/">Home</a>
   </div>
   <div class="centrecolumn">
     <img src="https://reginasar.github.io/pomelo/media/roof_centre.png">
