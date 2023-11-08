@@ -28,11 +28,19 @@
   float: left;
   width: auto;
   height: auto;
-  max-width: 55.55vw;
+  max-width: 53vw;
   max-height: 98vh; /* Should be removed. Only for demonstration */
   text-align: auto;
+  z-index: 1;
 }
 
+.homeimg {
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  left: 100px;
+  z-index: 2;
+}
 
 .centrecolumn {
   float: left;
@@ -51,17 +59,18 @@
   float: left;
   width: auto;
   height: auto;
-  max-width: 44.45vw;
+  max-width: 44vw;
   max-height: 98vh; /* Should be removed. Only for demonstration */
   object-fit: cover;
 }
   </style>
 </head>
 <body>
-  <img class="leftcolumn" src="https://reginasar.github.io/pomelo/media/roof_left.png">
+  <img class="homeimg" src="https://reginasar.github.io/pomelo/media/home_img.gif" />
+  <img class="leftcolumn" src="https://reginasar.github.io/pomelo/media/roof_left.png" />
     <!-- <a id="blue" href="https://reginasar.github.io/">Home</a>-->
-  <img class="centrecolumn" src="https://reginasar.github.io/pomelo/media/roof_centre.png">
-  <img class="rightcolumn" src="https://reginasar.github.io/pomelo/media/roof_right.png">
+  <img class="centrecolumn" src="https://reginasar.github.io/pomelo/media/roof_centre.png" />
+  <img class="rightcolumn" src="https://reginasar.github.io/pomelo/media/roof_right.png" />
 
   <!-- ><img src="https://reginasar.github.io/pomelo/media/rooftop.png"   style="max-width: 100%;  object-fit: cover;" /> -->
   <!-- Just Load the oneko.js library into your document and done -->
