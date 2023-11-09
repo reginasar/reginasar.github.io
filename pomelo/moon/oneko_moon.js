@@ -140,7 +140,7 @@
         nekoEl.style.width = "64px";
         nekoEl.style.height = "64px";
         nekoEl.style.position = "fixed";
-        nekoEl.style.backgroundImage = "url('./oneko_pomelo_moon.gif')";
+        nekoEl.style.backgroundImage = "url('./media/oneko_pomelo_moon.gif')";
         nekoEl.style.imageRendering = "pixelated";
         nekoEl.style.left = "32px";
         nekoEl.style.top = "32px";
