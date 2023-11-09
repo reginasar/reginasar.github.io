@@ -47,6 +47,20 @@
   transform: scale(1.1); /* (Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.vortex {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  bottom: 100px;
+  right: 5px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.vortex:hover {
+  transform: scale(1.1); /* (Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .centrecolumn {
   float: left;
   height: 98vh;
@@ -71,6 +85,7 @@
 </head>
 <body>
   <img class="homeimg" src="https://reginasar.github.io/pomelo/media/home_img.gif" onclick="window.location='https://reginasar.github.io/';"/>
+  <img class="vortex" src="https://reginasar.github.io/pomelo/media/vortex.png" onclick="window.location='https://reginasar.github.io/pomelo/moon';"/>
   <img class="leftcolumn" src="https://reginasar.github.io/pomelo/media/roof_left.png" />
     <!-- <a id="blue" href="https://reginasar.github.io/">Home</a>-->
   <img class="centrecolumn" src="https://reginasar.github.io/pomelo/media/roof_centre.png" />
