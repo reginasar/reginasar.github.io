@@ -40,6 +40,9 @@
   transform: scale(1.1); /* (Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+.baby {
+  z-index: 3;
+}
 
   </style>
 </head>
@@ -47,7 +50,7 @@
   <img class="homeimg" src="./media/earth.png" onclick="window.location='https://reginasar.github.io/pomelo';"/>
   <!-- ><img src="https://reginasar.github.io/pomelo/media/rooftop.png"   style="max-width: 100%;  object-fit: cover;" /> -->
   <!-- Just Load the oneko.js library into your document and done -->
-  <script src="./oneko_moon.js"></script>
+  <script class="baby" src="./oneko_moon.js"></script>
 
 </body>
 </html>
