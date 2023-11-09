@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The grey cat on the moon</title>
+  <style>
+    html,* { font-family: 'Inter'; box-sizing: border-box; }
+    body { background-image: url('media/moon.jpg');
+           background-repeat: no-repeat;
+           background-size: 100vw 100vh;
+           background-position: center top;
+  }
+
+      /* Style the footer */
+.footer {
+  background-color: #D0D7DA;
+  padding: 80px;
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 100px;
+}
+
+.homeimg {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: 0px;
+  right: 100px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.homeimg:hover {
+  transform: scale(1.1); /* (Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+  </style>
+</head>
+<body>
+  <img class="homeimg" src="./media/earth.png" onclick="window.location='https://reginasar.github.io/pomelo';"/>
+  <!-- ><img src="https://reginasar.github.io/pomelo/media/rooftop.png"   style="max-width: 100%;  object-fit: cover;" /> -->
+  <!-- Just Load the oneko.js library into your document and done -->
+  <script src="./oneko_moon.js"></script>
+
+</body>
+</html>
