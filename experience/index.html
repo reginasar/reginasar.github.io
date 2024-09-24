@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<! color scheme https://paletton.com/#uid=33s0u0k8bs2fSiIchnk4yzG1EOt>
+<!-- color scheme https://paletton.com/#uid=33s0u0k8bs2fSiIchnk4yzG1EOt-->
 <link rel="stylesheet" href="styles.css"> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <html lang="en">
@@ -8,119 +8,50 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Didot, sans-serif, Arial, Helvetica;
-}
-
-/* Style the header */
-.header {
-  background-color: #DFB2A6;
-  padding: 30px;
-  text-align: center;
-  font-size: 30px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-.mini {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
-
-.degree {
-  background-color: #DFB2A6;
-  width: 100%;
-  padding: 10px;
-}
-
-
-.project {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  border: 2px solid #DFB2A6;
-}
-
- 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  clear: both;
-}
- 
-/* Style the footer */
-.footer {
-  background-color: #D0D7DA;
-  padding: 10px;
-  text-align: center;
-  height: 80px;
-}
-
-.button {
-  transition: all .2s ease-in-out;
-}
-
-.button:hover {
-  transform: scale(1.5);
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.responsive {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-}
-
-.responsive2 {
-  width: 100%;
-  max-width: 550px;
-  height: auto;
-}
-  
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 700px) {
-  .project {
-    width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .mini {
-    width: 100%;
-  }
-}
-</style>
 </head>
 <body>
 
-
 <div class="header">
   <h1 id="darkred" style="font-size: 30px;">Experience</h2>
-  <h2 id="lightred">Recently completed PhD thesis in astrophysics, focused on galaxy evolution using self-supervised deep learning tools at Instituto de Astrofisica de Canarias (IAC).</h2>
+  <h2 id="lightred">Data Scientist - PhD in Astrophysics</h2>
 </div>
 
+<div class="degree">
+  <h1 id="darkred">Data Scientist</h1>
+  <h2 id="lightred">Edpuzzle (Spain, July 2024 - current)</h2>
+  <h3 id="darkred">Analyzing loads of education-related data using Python, SQL, AWS, Git.</h3>
+</div>
+
+<div class="degree">
+  <h1 id="darkred">Young Postdoctoral Researcher</h1>
+  <h2 id="lightred">Universidad de Valladolid (Spain, March 2024 - July 2024)</h2>
+  <h3 id="darkred">Measuring physically motivated sizes of galaxies using Deep Learning segmentation and domain adaptation.</h3>
+  <button type="button" class="collapsible">See activity and projects</button>
+  <div class="content">
+    <div class="project">
+      <h2 id="dred">&#x2022; Preparing an observed and a simulated dataset for galaxy segmentation
+        <a href="https://github.com/reginasar/stripe82_cutouts_and_mocks"><i class="fa fa-github button" style="font-size:25px;color:#BA8173"></i></a>
+      </h2>
+      <div class="container">
+        <img src="media/009_gal.png" class="image">
+        <div class="overlay">
+          <a href="#" class="image">
+            <img src="media/009_galmask.png" class="image">
+          </a>
+        </div>
+      </div>
+      <h3 id="darkred">The observed galaxy stamps correspond to SDSS Stripe82 cutouts, while the mock galaxies were simulated with Imfit combining a bulge and a disc light profile, and later overlapped on a real sky image.</h3>
+    </div>
+  
+    <div class="project">
+      <h2 id="dred">&#x2022; Traning a segmentation model that adapts two domains
+        <a href="https://github.com/reginasar/Stripe82_segmentation"><i class="fa fa-github button" style="font-size:25px;color:#BA8173"></i></a>
+      </h2>
+      <h3 id="darkred">A U-Net model is trained on the source target (simulated) to optimize the segmentation loss. In a second stage, the decoder is frozen and both datasets are fed to the model. In addition to the segmentation problem (on source data only), a discriminator layer is introduced after the latent space to classify both data domains. At the same time, the encoder is trained to push both sets of embeddings together. </h3>
+    </div>
+  </div>
+  <button type="button" class="hidecoll">Hide &#10224;</button>
+</div>
 
 <div class="degree">
   <h1 id="darkred">PhD in Astrophysics</h1>
@@ -129,39 +60,38 @@ body {
   <h3 id="lightred" style="display: inline;">Supervisors: </h3> <a id="lightred" style="text-decoration: underline;" href="https://mhuertascompany.weebly.com/">Marc Huertas-Company,</a> <a id="lightred" style="text-decoration: underline;" href="http://vivaldi.ll.iac.es/galeria/jhk/Johan%20Knapen%27s%20Homepage/Welcome.html">Johan Knapen</a>
   <h3 id="darkred">Topic: Using self-supervised Deep Learning and cosmological simulations to constrain the physics of galaxies through the properties derived from integral field spectroscopy observations.</h3>
 
-  <div class="row"> 
-    <div class="project" style="background-color: #FFF5F2;">
+  <button type="button" class="collapsible">See activity and projects</button>
+  <div class="content"> 
+    <div class="project">
       <h2 id="dred">&#x2022; Review on Contrastive Learning for Astrophysics
-        <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230605528H/abstract"><img class="button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a>
+        <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230605528H/abstract"><img class="pop-button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a>
       </h2>
       <img src="https://reginasar.github.io/experience/media/CL_frameworks_2_page-0001.jpg" class="center responsive2" />
       <h3 id="darkred">I wrote an invited review with my supervisor on the application of contrastive learning, a self-supervised machine learning algorithm, applied to astrophysics.</h3>
     </div>
   
 
-    <div class="project" style="background-color: #FFF5F2;">
+    <div class="project">
       <h2 id="dred">&#x2022; Capturing the physics of MaNGA galaxies with self-supervised deep learning
-        <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...921..177S/abstract"><img class="button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a>
+        <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...921..177S/abstract"><img class="pop-button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a>
       </h2>
       <img src="https://reginasar.github.io/experience/media/pca_simclr_ifu.png" class="center responsive" />
       <h3 id="darkred">I have applied a novel self-supervised Deep Learning model to astronomical data. This was the first time contrastive learning was applied to IFU data, and only the second time in astronomy. We show that we can reduce observational effects while keeping intrinsic information from the galaxies, obtaining a more meaningful representation than other classical dimensionality reduction algorithms like PCA. This project inspired the use of this technique on other astronomical datasets.</h3>
     </div>
-  </div>
  
-  <div class="row"> 
-    <div class="project" style="background-color: #FFF5F2;">
+    <div class="project">
       <h2 id="dred">&#x2022; MaNGIA: 10,000 mock galaxies for stellar population analysis 
-        <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...673A..23S/abstract"><img class="button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a>
+        <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...673A..23S/abstract"><img class="pop-button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a>
         <a href="https://github.com/reginasar/TNG_MaNGA_mocks"><i class="fa fa-github button" style="font-size:25px;color:#BA8173"></i></a>
       </h2>
       <img src="https://reginasar.github.io/experience/media/scheme_mini_paper2_page-0001.jpg" class="center responsive" />
       <h3 id="darkred">I generated a forward modelled spatial-spectral dataset of simulated galaxies, resulting in the largest mock IFS sample ever made. For this I developed a python algorithm to match two distributions. I updated and modified a complex Python pipeline, and ran it in parallel using Linux systems.</h3>      
     </div>
    
-    <div class="project" style="background-color: #FFF5F2;">
+    <div class="project">
       <h2 id="dred">Tutoring</h2>
-      <h3 id="darkred">&#x2022; Tutored three undergrad students during their internships at IAC.</h3>
-      <h3 id="darkred">&#x2022; Lectured introductory Machine Learning course for MSc level students at ULL (6 hours).</h3>
+      <h3 id="darkred">&#x2022; I tutored three undergrad students during their internships at IAC.</h3>
+      <h3 id="darkred">&#x2022; I lectured introductory Machine Learning course for MSc level students at ULL (6 hours).</h3>
       <h3 id="darkred">&#x2022; Member of the tribunal committee for two master thesis and one bachelor thesis at ULL.</h3>
       <h2 id="dred">Other academic services</h2>
       <h3 id="darkred">&#x2022; Article referee for Astronomy and Astrophysics.</h3>
@@ -169,59 +99,63 @@ body {
       <a id="darkred" style="text-decoration: underline;" href="https://ui.adsabs.harvard.edu/search/filter_database_fq_database=AND&filter_database_fq_database=((database%3Aastronomy%20OR%20database%3Aphysics))&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(((database%3Aastronomy%20OR%20database%3Aphysics))%20AND%20database%3A%22astronomy%22)&p_=0&q=((%20author%3A%22Sarmiento%2C%20Regina%22)%20AND%20year%3A2020-2024)&sort=date%20desc%2C%20bibcode%20desc">Full list</a>
     </div>
   </div>
+  <button type="button" class="hidecoll">Hide &#10224;</button>
 </div>
  
 <div class="degree">
   <h1 id="darkred">Lic. in Astronomy</h1>
   <h2 id="lightred">Universidad Nacional de La Plata (Argentina, 2019)</h2>
   <h3 id="lightred">Degree equivalent to BCs+MSc. Distinguished student 2019.</h3>
-
-  <div class="row"> 
-    <div class="project" style="background-color: #FFF5F2;">
-      <h2 id="dred">Thesis title: Characterization of the DSA3 radio antenna for astronomical use <a href="https://ui.adsabs.harvard.edu/abs/2020BAAA...61B.231S/abstract"><img class="button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a></h2>
+  <button type="button" class="collapsible">See activity and projects</button>
+  <div class="content"> 
+    <div class="project">
+      <h2 id="dred">Thesis title: Characterization of the DSA3 radio antenna for astronomical use <a href="https://ui.adsabs.harvard.edu/abs/2020BAAA...61B.231S/abstract"><img class="pop-button" src="media/ads_partial_logo_dark_background.svg" height="20" width="20"/></a></h2>
       <h3 id="darkred" style="display: inline;">Supervisors: </h3> <a id="darkred" style="text-decoration: underline;" href="https://ar.linkedin.com/in/marcelo-colazo-37b0ab4">Marcelo Colazo,</a> <a id="darkred" style="text-decoration: underline;" href="https://www.iar.unlp.edu.ar/institucional/personal/dr-manuel-fernandez-lopez/">Manuel Fernandez Lopez</a>
       <h3 id="darkred">Topic: Transforming the raw output of a communication radio antenna in to an astronomical format. Characterizing the pointing of the antenna. Won a scholarship to fund this project, granted by the Argentinian
 Association of Astronomy.</h3>
     </div>
 
-    <div class="project" style="background-color: #FFF5F2;">
+    <div class="project">
       <h2 id="dred">Teacher Assistent at UNLP</h2>
-      <h3 id="darkred">Taught Calculus and Algebra at Universidad Nacional de La Plata for 2 years. Obtained three different positions through competitive selection procedures (1-5%)</h3>
+      <h3 id="darkred">I taught Calculus and Algebra at Universidad Nacional de La Plata for 2 years. Obtained three different positions through competitive selection procedures (1-5%)</h3>
       <h3 id="darkred">&#x2022; Calculus A for Engineers (May 2017-Apr. 2019): Functions in n-dimensions. Differentiability. Multidimensional optimization.</h3>
       <h3 id="darkred">&#x2022; Calculus B for Engineers (Aug. 2018-Nov. 2018): Functions in n-dimensions. Integration. Differential equations.</h3>
       <h3 id="darkred">&#x2022; Algebra for Science (Nov. 2018-Apr. 2019): Natural, whole, rational, real and complex numbers. Permutations and combinations. Functions and relations. Group theory.</h3>
     </div>
   </div>
+  <button type="button" class="hidecoll">Hide &#10224;</button>
 </div>
 
  
 <div class="row"> 
-  <div class="mini" style="background-color: #DFB2A6;">
+  <div class="mini">
     <h2 id="darkred">Degrees</h2>
     <h3 id="lightred">&#x2022; Lic. in Astronomy (BSc+MSc)</h3>
-    <h3 id="lightred">&#x2022; PhD Astrophysics </h3>
+    <h3 id="lightred">&#x2022; Ph.D. Astrophysics </h3>
   </div>
  
-  <div class="mini" style="background-color: #DFB2A6;">
+  <div class="mini">
     <h2 id="darkred">Programming</h1>
-    <h3 id="lightred">&#x2022; Python, Bash (5 years)</h3>
-    <h3 id="lightred">&#x2022; Fortran, C++, Octave, HTML, CSS (incidental)</h3>
+    <h3 id="lightred">&#x2022; Everyday coding: Python, Bash, SQL</h3>
+    <h3 id="lightred">&#x2022; Incidental coding: Javascript, Fortran, C++, Octave, HTML, CSS</h3>
     <h3 id="lightred">&#x2022; OS: Linux, Mac, Windows</h3>
   </div>
  
-  <div class="mini" style="background-color: #DFB2A6;">   
+  <div class="mini">   
     <h2 id="darkred">Other certifications</h2>
-    <h3 id="lightred">&#x2022; Data Analysis with Python <a href="https://www.freecodecamp.org/certification/fcc90348913-fd40-420e-a1f8-22a1d60f429a/data-analysis-with-python-v7"><img class="button" src="media/certificate.svg" height="20" width="20"/></a> </h3>
-    <h3 id="lightred">&#x2022; Scientific programming with Python <a href="https://www.freecodecamp.org/certification/fcc90348913-fd40-420e-a1f8-22a1d60f429a/scientific-computing-with-python-v7"><img class="button" src="media/certificate.svg" height="20" width="20"/></a> </h3>
-    <h3 id="lightred">&#x2022; Introduction to optical remote sensing <a href="https://www.argentina.gob.ar/ciencia/conae/unidad-educacion/cursos-y-capacitaciones/teledeteccion-optica-nivel-introductorio"><img class="button" src="media/conae.svg" height="20" width="20"/></a> </h3>
-    <h3 id="lightred">&#x2022; Remote sensing applied to ocean colour <a href="https://www.argentina.gob.ar/ciencia/conae/unidad-educacion/cursos-y-capacitaciones/teledeteccion-aplicada-al-color-del-oceano-nivel-introductorio"><img class="button" src="media/conae.svg" height="20" width="20"/></a> </h3>
-    <h3 id="lightred">&#x2022; Introduction to SAR remote sensing <a href="https://www.argentina.gob.ar/ciencia/conae/unidad-educacion/cursos-y-capacitaciones/teledeteccion-sar-nivel-introductorio"><img class="button" src="media/conae.svg" height="20" width="20"/></a> </h3>
+    <h3 id="lightred"><a href="https://www.freecodecamp.org/certification/fcc90348913-fd40-420e-a1f8-22a1d60f429a/data-analysis-with-python-v7"><img class="pop-button" src="media/certificate.svg" height="20" width="20"/></a> Data Analysis with Python</h3>
+    <h3 id="lightred"><a href="https://www.freecodecamp.org/certification/fcc90348913-fd40-420e-a1f8-22a1d60f429a/scientific-computing-with-python-v7"><img class="pop-button" src="media/certificate.svg" height="20" width="20"/></a> Scientific programming with Python</h3>
+    <h3 id="lightred"><a href="https://www.freecodecamp.org/certification/fcc90348913-fd40-420e-a1f8-22a1d60f429a/javascript-algorithms-and-data-structures-v8"><img class="pop-button" src="media/certificate.svg" height="20" width="20"/></a> JavaScript Algorithms and Data structures</h3>
+    <h3 id="lightred"><a href="https://www.argentina.gob.ar/ciencia/conae/unidad-educacion/cursos-y-capacitaciones/teledeteccion-optica-nivel-introductorio"><img class="pop-button" src="media/conae.svg" height="20" width="20"/></a> Introduction to optical remote sensing</h3>
+    <h3 id="lightred"><a href="https://www.argentina.gob.ar/ciencia/conae/unidad-educacion/cursos-y-capacitaciones/teledeteccion-aplicada-al-color-del-oceano-nivel-introductorio"><img class="pop-button" src="media/conae.svg" height="20" width="20"/></a> Remote sensing applied to ocean colour</h3>
+    <h3 id="lightred"><a href="https://www.argentina.gob.ar/ciencia/conae/unidad-educacion/cursos-y-capacitaciones/teledeteccion-sar-nivel-introductorio"><img class="pop-button" src="media/conae.svg" height="20" width="20"/></a> Introduction to SAR remote sensing</h3>
+    <h3 id="lightred"><a href="https://www.hlrs.de/training/2024/ikileus-nlp"><img class="pop-button" src="media/hlrs_logo.png" height="15" width="50"/></a> Natural Language Processing</h3>
   </div>
  
-  <div class="mini" style="background-color: #DFB2A6;">
+  <div class="mini">
     <h2 id="darkred">Languages</h2>
     <h3 id="lightred">&#x2022; Spanish (Native)</h3>
-    <h3 id="lightred">&#x2022; English (Professional)</h3>
+    <h3 id="lightred">&#x2022; English (Fluent)</h3>
   </div>
 </div> 
 
@@ -230,6 +164,9 @@ Association of Astronomy.</h3>
 <div class="footer">
   <a id="blue" href="https://reginasar.github.io/">Home</a>
 </div>
+
+<script src="script.js"></script>
+
 
 </body>
 </html>

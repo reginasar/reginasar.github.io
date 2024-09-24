@@ -1,4 +1,190 @@
-<style>
+/*<style>*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Didot, sans-serif, Arial, Helvetica;
+}
+
+/* Style the header */
+.header {
+  background-color: #DFB2A6;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.mini {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  background-color: #DFB2A6;
+}
+
+.degree {
+  background-color: #DFB2A6;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.project {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #DFB2A6;
+  background-color: #FFF5F2;
+}
+
+
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  clear: both;
+}
+ 
+/* Style the footer */
+.footer {
+  background-color: #D0D7DA;
+  padding: 10px;
+  text-align: center;
+  height: 80px;
+}
+
+.pop-button {
+  transition: all .2s ease-in-out;
+}
+
+.pop-button:hover {
+  transform: scale(1.5);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.responsive2 {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+  
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+  .project {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mini {
+    width: 100%;
+  }
+}
+
+ /* Container needed to position the overlay. Adjust the width as needed */
+ .container {
+  position: relative;
+  width: 50%;
+  max-width: 550px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  /*background-color: red;*/
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.collapsible {
+  background-color: #b36a58;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:hover {
+  background-color: #955A4B;
+  color: white;
+} /*.active, */
+
+
+.content {
+  display: none;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: max-height 0.2s ease-out;
+}
+
+.hidecoll {
+  display: none;
+  background-color: #b36a58;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.hidecoll:hover {
+  background-color: #955A4B;
+}/*.active,*/
 
 
 h1#blue {
@@ -134,4 +320,4 @@ a#darkred:active {
 }
 
   
-</style>
+/*</style>*/
